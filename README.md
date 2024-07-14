@@ -1,3 +1,5 @@
+Forked from https://github.com/argaar/comfortable-environment-card. Credits to @argaar.
+
 # Comfortable Environment Card
 
 A card to display the Heat Index and Discomfort Index (aka Thom Index)
