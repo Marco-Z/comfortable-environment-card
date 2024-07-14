@@ -1,6 +1,6 @@
 {
   "name": "comfortable-environment-card",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Lovelace card to show the discomfort index based on temperature and humidity sensors",
   "keywords": [
     "home-assistant",
