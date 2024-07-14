@@ -323,21 +323,21 @@ class ComfortableEnvironmentCard extends LitElement {
       <style>
         .color-range-container {
             display: flex;
+            height: 36px;
         }
         .collapsed {
           margin-top: 2%;
         }
         .color-range-gradient {
             width: 100%;
-            hright: 25px;
             border-radius: 5px;
             margin: 0 10px 10px;
         }
         .value-box {
             border: solid 2px #000;
             border-radius: 10px;
-            width: 2px;
-            hright: 100%;
+            width: 0px;
+            height: 100%;
             color: #000;
             font-weight: bold;
             text-align: center;
