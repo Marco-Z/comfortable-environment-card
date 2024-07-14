@@ -262,7 +262,7 @@ class ComfortableEnvironmentCard extends LitElement {
             `:``}
             <div class="color-range-container${indexInfo=='NONE'?' collapsed':''}" title="${!Number.isNaN(HIeffects)?localize('states.hi.'+[HIeffects]):'---'}">
               <div class="color-range-gradient" style="background: linear-gradient(90deg, rgb(254, 240, 217) 0%, rgb(253, 204, 138) 28%, rgb(252, 141, 89) 42%, rgb(227, 74, 51) 66%, rgb(179, 0, 0) 100%);" >
-                  <div class="value-box" style="margin-left: max(0%,calc(${this.calcRange(0,100,tempSensorUnitInF?76:23,tempSensorUnitInF?132:57,HI)}% - 46px))">${HI.toFixed(display_precision)}</div>
+                  <div class="value-box" style="margin-left: max(0%${this.calcRange(0,100,tempSensorUnitInF?76:23,tempSensorUnitInF?132:57,HI)}%)"></div>
               </div>
             </div>
           `:``}
@@ -296,7 +296,7 @@ class ComfortableEnvironmentCard extends LitElement {
             `:``}
             <div class="color-range-container${indexInfo=='NONE'?' collapsed':''}" title="${!Number.isNaN(DIeffects)?localize('states.di.'+[DIeffects]):'---'}">
               <div class="color-range-gradient" style="background: linear-gradient(90deg,rgb(5, 112, 176) 0%,rgb(116, 169, 207)12%,rgb(189, 201, 225) 32%,rgb(241, 238, 246) 44%,rgb(254, 240, 217) 56%,rgb(253, 204, 138) 68%,rgb(252, 141, 89) 80%,rgb(227, 74, 51) 88%,rgb(179, 0, 0) 100%);" >
-                  <div class="value-box" style="margin-left: max(0%,calc(${this.calcRange(0,100,8,34,DI)}% - 46px))">${DI.toFixed(display_precision)}</div>
+                  <div class="value-box" style="margin-left: max(0%,${this.calcRange(0,100,8,34,DI)}%)"></div>
               </div>
             </div>
           `:``}
@@ -329,19 +329,18 @@ class ComfortableEnvironmentCard extends LitElement {
         }
         .color-range-gradient {
             width: 100%;
+            hright: 25px;
             border-radius: 5px;
             margin: 0 10px 10px;
         }
         .value-box {
             border: solid 2px #000;
             border-radius: 10px;
-            padding: 3px;
-            width: 32px;
+            width: 2px;
+            hright: 100%;
             color: #000;
-            font-size: .9em;
             font-weight: bold;
             text-align: center;
-            margin: 2px 0;
         }
        .comfort-env-text {
             margin: 0 10px 0;
