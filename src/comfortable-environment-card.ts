@@ -321,12 +321,17 @@ class ComfortableEnvironmentCard extends LitElement {
   protected renderStyle(): TemplateResult | void {
     return html`
       <style>
+        ha-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
         .color-range-container {
             display: flex;
-            height: 36px;
+            height: 100%;
         }
         .collapsed {
-          margin-top: 2%;
+          margin-top: 5px;
         }
         .color-range-gradient {
             width: 100%;
@@ -334,15 +339,11 @@ class ComfortableEnvironmentCard extends LitElement {
             margin: 0 10px 10px;
         }
         .value-box {
-            border: solid 2px #000;
-            border-radius: 10px;
-            width: 0px;
+            width: 4px;
+            background-color: black;
             height: 100%;
-            color: #000;
-            font-weight: bold;
-            text-align: center;
         }
-       .comfort-env-text {
+      .comfort-env-text {
             margin: 0 10px 0;
             padding: 5px 0 5px;
             text-align: left;
@@ -351,16 +352,16 @@ class ComfortableEnvironmentCard extends LitElement {
         .info {
             margin-top: -4px;
             padding-bottom: 1%;
+            flex-grow: 1;
         }
         .effects {
           display: inline;
         }
         .header {
             display: flex;
-            padding: 1% 2% 0;
+            padding: 1% 5px 0;
             justify-content: space-between;
             font-weight: 500;
-            margin-bottom: 1%;
         }
         .header > .name {
             font-size: 20px;
